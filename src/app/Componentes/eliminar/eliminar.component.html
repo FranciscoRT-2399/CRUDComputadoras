@@ -1,0 +1,45 @@
+<div class="container">
+	<div class="card">
+		<div class="card-header text-center">
+			<h3>ELIMINACION DE COMPUTADORAS</h3>
+		</div>
+		<div class="card-body">
+			<form>
+				<div class="form-group">
+					<label for="id"> ID: </label>
+					<input type="number" name="id" class="form-control" [(ngModel)]="compu.idCompu" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="marca"> MARCA: </label>
+					<input type="text" name="marca" class="form-control" [(ngModel)]="compu.marca" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="modelo"> MODELO: </label>
+					<input type="text" name="modelo" class="form-control" [(ngModel)]="compu.modelo" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="ram"> RAM </label>
+					<input type="number" name="ram" class="form-control" [(ngModel)]="compu.ram" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="procesador"> PROCESADOR: </label>
+					<input type="text" name="procesador" class="form-control" [(ngModel)]="compu.procesador" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="precio"> PRECIO: </label>
+					<input type="number" name="precio" class="form-control" [(ngModel)]="compu.precio" readonly>
+				</div>
+
+				<br>
+				<button class="btn btn-outline-dark" (click)="eliminar()"> ELIMINAR </button>
+				<button class="btn btn-outline-dark" style="margin-left: 15px;" (click)="cancelar()"> CANCELAR </button>
+
+			</form>
+		</div>
+	</div>
+</div>
